@@ -1,0 +1,9 @@
+@mixin btn($color, $colFont) {
+    padding: 1.25rem 2rem;
+    font-size: 1.6rem;
+    color: $colFont;
+    background-color: $color;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+}

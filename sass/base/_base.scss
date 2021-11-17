@@ -26,6 +26,7 @@ img{
 a{
     text-decoration: none;
     color: $texto;
+    cursor: pointer;
 }
 
 .navegacion__enlaces .enlace.active{
@@ -38,11 +39,22 @@ p, a, h1, h2, h3, h4{
 
 h1{
     color: $blanco;
+    font-size: 4.8rem;
+}
+
+h1, h2, h3{
     font-weight: 600;
 }
 
-h1{
-    font-size: 4.8rem;
-    font-weight: 600;
+p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 26px;
+    letter-spacing: 0.5px;
 }
+
+.header{
+    width: 100%;
+}
+
 

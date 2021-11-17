@@ -2,6 +2,7 @@
 
 @import "./base/variables";
 @import "./base/base";
+@import "./base/mixins";
 
 //BOOTSTRAP CAROUSEL
 
@@ -14,4 +15,5 @@
 //SECCIONES
 @import "./secciones/nav";
 @import "./secciones/header";
+@import "./secciones/mainHome";
 
