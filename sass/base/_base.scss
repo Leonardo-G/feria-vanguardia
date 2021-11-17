@@ -1,0 +1,43 @@
+*, *::after, *::before{
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $background;
+}
+
+.contenedor{
+    width: $contenedor;
+    margin: 0 auto;
+}
+
+img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+a{
+    text-decoration: none;
+    color: $texto;
+}
+
+.navegacion__enlaces .enlace.active{
+    color: $acento;
+}
+
+p, a, h1, h2, h3, h4{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 4.8rem;
+    font-weight: 600;
+}
+

@@ -1,0 +1,140 @@
+.header{
+    width: 100%;
+}
+
+.navegacion{
+    height: 10.4rem;
+    .enlace--imgCenter{
+        display: none;
+    }
+    .enlace--img, .enlace--imgCenter{
+        width: 13rem;
+        height: 8.8rem;
+    }
+}
+
+.navegacion__boton{
+    display: none;
+}
+
+.navegacion__enlaces{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .enlace{
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: $texto;
+        cursor: pointer;
+        &:hover{
+            color: $acento;
+        }
+    }
+    .enlace--mobile{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .navegacion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 9.6rem;
+        .enlace--imgCenter{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .navegacion__enlaces{
+        background-color: $blanco;
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        width: 100%;
+        height: 100%;
+        transition: .3s all ease;
+        .enlace{
+            display: block;
+            text-align: center;
+            font-size: 2.5rem;
+            padding: 2rem 0;
+            &:first-of-type{
+                margin-top: 7rem;
+            }
+        }
+        .enlace--mobile{
+            display: block;
+        }
+        .enlace--img{
+            display: none;
+        }  
+    }
+    .toggle{
+        visibility: visible;
+        opacity: 1;
+        transition: .3s all ease;
+        transform: translateX(0%);
+    }
+    .navegacion__boton{
+        z-index: 99;
+        width: 2.4rem;
+        height: 2.4rem;
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 375px) {
+    .navegacion{
+        height: 8.8rem;
+    }
+}
+
+//LINEAS MENU
+.linea-menu{
+    background-color: #000;
+    width: 2.4rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transition: .3s all ease;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 5.5px;
+        left: 0;
+        background-color: #000;
+        width: 2.4rem;
+        height: 0.2rem;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 5.5px;
+        left: 0;
+        background-color: #000;
+        width: 2.4rem;
+        height: 0.2rem;
+        transition: .3s all ease;
+    }
+}
+
+
+.linea-close{
+    transform: rotate(45deg);
+    transition: .3s all ease;
+    &::after{
+        transform: rotate(90deg);  
+        bottom: 0px;  
+        transition: .3s all ease;
+    }
+    &::before{
+        visibility: hidden;
+    }
+}
