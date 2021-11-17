@@ -583,7 +583,52 @@ p {
   }
   .seccion .seccion__media img {
     margin-bottom: 2rem;
-    height: 31rem;
+    width: 100%;
+  }
+}
+.footer {
+  height: 7.2rem;
+  background-color: #FBBD4A;
+  width: 100%;
+}
+.footer .footer__column {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer__column p {
+  font-size: 1.2rem;
+  color: #474A57;
+}
+.footer .redes__icon {
+  display: flex;
+  column-gap: 1rem;
+}
+.footer .icon--red {
+  position: relative;
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #474A57;
+  background-color: #f8c669;
+  border-radius: 50%;
+}
+.footer .icon--red i {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 375px) {
+  .footer {
+    height: 13rem;
+  }
+  .footer .footer__column {
+    flex-direction: column-reverse;
+    justify-content: center;
+    row-gap: 1rem;
   }
 }
 
