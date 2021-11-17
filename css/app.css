@@ -293,14 +293,12 @@ h1 {
 
 @media (max-width: 768px) {
   .navegacion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 9.6rem;
   }
   .navegacion .enlace--imgCenter {
     display: block;
     margin: 0 auto;
+    padding-top: 1rem;
   }
 
   .navegacion__enlaces {
@@ -343,6 +341,9 @@ h1 {
     width: 2.4rem;
     height: 2.4rem;
     position: relative;
+    position: absolute;
+    top: 4rem;
+    right: 7.5%;
     cursor: pointer;
     display: inline-block;
   }
@@ -350,6 +351,9 @@ h1 {
 @media (max-width: 375px) {
   .navegacion {
     height: 8.8rem;
+  }
+  .navegacion .navegacion__boton {
+    top: 3.5rem;
   }
 }
 .linea-menu {
