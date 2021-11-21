@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap');
 
+/////////PAGE INICIO////////
+
 @import "./base/variables";
 @import "./base/base";
 @import "./base/mixins";
 
-//BOOTSTRAP CAROUSEL
-
 // Required
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/carousel";
 
 //SECCIONES
-@import "./secciones/nav";
-@import "./secciones/header";
-@import "./secciones/mainHome";
-@import "./secciones/footer";
+@import "../secciones/nav";
+@import "../secciones/header";
+@import "../secciones/mainHome";
+@import "../secciones/footer";
 
