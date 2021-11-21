@@ -1,25 +1,34 @@
 .seccion{
     display: flex;
-    padding: 7.5rem 0;
-    //Luego indicar la separacion entre las columnas
-    column-gap: 2rem;
+    padding: 7.5rem 9rem;
+    column-gap: 6rem;
     .seccion__parrafo{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        flex: 0 0 50%;
-        //Puede cambiar el ancho, agregando una nueva clase. EJEMPLO parrafo--nostros, flex: 0 0 30rem
-        h3{
-            font-size: 2.5rem;
+        .stron--ig{
+            color: $acento;
         }
         p{
             padding: 1.5rem 0;
         }
+        h3{
+            font-size: 2.5rem;
+        }
+        .btn--edicion{
+            @include btn(transparent, $acento);
+            padding-left: 0;
+            display: flex;
+            align-items: center;
+            width: 21rem;
+            .fa-arrow-right{
+                font-size: 1.4rem;
+                margin-left: 1rem;
+            }
+        }
     }
     .seccion__media img{
-        //Luego se puede cambiar el ancho de la img, agregando una nueva clase
-        width: 100%;
-        border-radius: 16px;
+        height: 31rem;
     }
 }
 
@@ -54,6 +63,12 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            *{
+                text-align: center;
+            }
+            .stron--ig{
+                color: $acento;
+            }
         }
         .seccion__media img{
             margin-bottom: 2rem;

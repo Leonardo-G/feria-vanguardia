@@ -7,14 +7,15 @@
 @import "./base/mixins";
 
 // Required
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins";
-@import "../../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/carousel";
 
 //SECCIONES
-@import "../secciones/nav";
-@import "../secciones/header";
-@import "../secciones/mainHome";
-@import "../secciones/footer";
+@import "./secciones/nav";
+@import "./secciones/header";
+@import "./secciones/grid1";
+@import "./secciones/footer";
 
+@import "./views/inicio";

@@ -1,0 +1,65 @@
+.seccionInfo{
+    margin-top: 6rem;
+    text-align: center;
+    h2{
+        font-size: 3.9rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+    .infoLinea{
+        padding-bottom: 4rem;
+    }
+    .btn--info{
+        @include btn($acento, $blanco)
+    }
+}
+.seccion.seccion--inicio{
+    grid-template-columns: 1fr 0.75fr;
+}
+
+
+.seccion{
+    img{
+        width: 35rem;
+        height: 35rem;
+    }
+    .media--inicio{
+        margin: 0 auto;
+    }
+    .stron--ig{
+        color: $acento;
+    }
+}
+
+.btn--edicion{
+    @include btn(transparent, $acento);
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    width: 21rem;
+    .fa-arrow-right{
+        font-size: 1.4rem;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 865px) {
+    .seccion.seccion--inicio{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 375px) {
+    .seccion{
+        .parrafo--inicio{
+            grid-row: 1 / 2;
+            *{
+                text-align: center;
+            }
+        }
+        .media--inicio img{
+            height: 100%;
+        }
+    }
+}
