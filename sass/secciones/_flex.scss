@@ -1,6 +1,6 @@
 .seccion{
     display: flex;
-    padding: 7.5rem 9rem;
+    padding: 7.5rem 0;
     //Luego indicar la separacion entre las columnas
     column-gap: 2rem;
     .seccion__parrafo{
@@ -20,5 +20,44 @@
         //Luego se puede cambiar el ancho de la img, agregando una nueva clase
         width: 100%;
         border-radius: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    .seccion{
+        padding: 7.5rem 4rem;
+    }
+}
+
+@media (max-width: 865px) {
+    .seccionInfo h2{
+        font-size: 3.1rem;
+    }   
+
+    .seccion{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+        column-gap: none;
+        row-gap: 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .seccion{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+        .seccion__parrafo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .seccion__media img{
+            margin-bottom: 2rem;
+            width: 100%;
+        }
     }
 }
