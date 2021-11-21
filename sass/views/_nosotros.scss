@@ -1,0 +1,14 @@
+.media--nosotros img{
+    height: 40rem;
+    width: 100%;
+}
+
+.cuadricula{
+    margin-bottom: 10rem;
+}
+
+@media (max-width: 375px) {
+    .media--nosotros img{
+        height: 26rem;
+    }
+}

@@ -1,0 +1,36 @@
+.zoom{
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #232323c0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    .iconClose{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 2rem;
+        color: $blanco;
+        cursor: pointer;
+    }
+    .zoom__container{
+        position: relative;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 80%;
+        width:  min(80rem, 90%);
+    }
+    .zoom--img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
