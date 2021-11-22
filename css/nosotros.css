@@ -249,6 +249,7 @@ p {
   width: 100%;
   height: 30rem;
   border-radius: 16px;
+  cursor: pointer;
 }
 
 @media (max-width: 300px) {
@@ -266,13 +267,21 @@ p {
   height: 100%;
   z-index: 99;
 }
+.zoom .iconRight, .zoom .iconClose {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  cursor: pointer;
+}
 .zoom .iconClose {
   position: absolute;
   top: 5%;
   right: 5%;
-  font-size: 2rem;
-  color: #FFFFFF;
-  cursor: pointer;
+}
+.zoom .iconRight {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translateX(-50%);
 }
 .zoom .zoom__container {
   position: relative;
@@ -281,7 +290,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 80%;
-  width: min(80rem, 90%);
+  width: min(85rem, 90%);
 }
 .zoom .zoom--img {
   position: absolute;
