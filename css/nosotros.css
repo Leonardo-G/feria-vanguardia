@@ -267,7 +267,7 @@ p {
   height: 100%;
   z-index: 99;
 }
-.zoom .iconRight, .zoom .iconClose {
+.zoom .iconRight, .zoom .iconClose, .zoom .iconLeft {
   font-size: 2.5rem;
   color: #FFFFFF;
   cursor: pointer;
@@ -280,7 +280,13 @@ p {
 .zoom .iconRight {
   position: absolute;
   top: 50%;
-  right: 3%;
+  right: 2.5%;
+  transform: translateX(-50%);
+}
+.zoom .iconLeft {
+  position: absolute;
+  top: 50%;
+  left: 2.5%;
   transform: translateX(-50%);
 }
 .zoom .zoom__container {
@@ -290,7 +296,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 80%;
-  width: min(85rem, 90%);
+  width: min(85rem, 85%);
 }
 .zoom .zoom--img {
   position: absolute;

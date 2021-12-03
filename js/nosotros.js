@@ -46,11 +46,24 @@ function zoomImg(e){
     img.alt = "Feria Vanguardia";
 
     const arrowRight = document.createElement("i");
-    arrowRight.classList = "fas fa-arrow-right iconRight";
-    arrowRight.onclick = rightImg
+    arrowRight.classList = "fas fa-angle-right iconRight";
+    arrowRight.onclick = rightImg;
 
+    const arrowLeft = document.createElement("i");
+    arrowLeft.classList = "fas fa-angle-left iconLeft";
+    arrowLeft.onclick = leftImg;
+    
+    if( Number(img.dataset.img) === imgs.length ) {
+        arrowRight.style.display = "none"
+    }
+
+    if( Number(img.dataset.img) === 1 ) {
+        arrowLeft.style.display = "none";
+    }
+    
     divContainer.appendChild(iconClose);
     divContainer.appendChild(arrowRight);
+    divContainer.appendChild(arrowLeft);
     imgContainer.appendChild(img);
     divContainer.appendChild(imgContainer);
     galeria.appendChild(divContainer);
@@ -64,9 +77,16 @@ function zoomImg(e){
 
 function rightImg(){
     const imgCurrent = imgs.find( img => Number(img.dataset.img) === (Number(currentImgUnique) + 1));
+    
     currenSrcImg = [imgCurrent];
-    currentImgUnique = imgCurrent.dataset.img
-    console.log(currenSrcImg)
+    currentImgUnique = imgCurrent.dataset.img;
+    zoomImg();
+}
 
+function leftImg(){
+    const imgCurrent = imgs.find( img => Number(img.dataset.img) === (Number(currentImgUnique) - 1));
+    
+    currenSrcImg = [imgCurrent];
+    currentImgUnique = imgCurrent.dataset.img;
     zoomImg();
 }
