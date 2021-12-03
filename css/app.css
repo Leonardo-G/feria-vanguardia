@@ -592,6 +592,9 @@ p {
   border-radius: 8px;
   font-weight: 600;
 }
+.seccionInfo .btn--info a {
+  color: #fff;
+}
 
 .seccion.seccion--inicio {
   grid-template-columns: 1fr 0.75fr;

@@ -11,7 +11,10 @@
         padding-bottom: 4rem;
     }
     .btn--info{
-        @include btn($acento, $blanco)
+        @include btn($acento, $blanco);
+        a{
+            color: #fff;
+        }
     }
 }
 .seccion.seccion--inicio{
