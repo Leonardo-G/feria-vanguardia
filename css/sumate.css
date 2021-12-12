@@ -23,6 +23,7 @@ body {
     font-size: 15px;
     font-weight: bold;
     list-style-type: none;
+    padding: 0;
 }
 .span{
   margin-left: 10px;
@@ -126,6 +127,7 @@ p {
 }
 .navegacion .navegacion__enlaces .enlace:hover {
   color: #EE2A7B;
+  text-decoration: none;
 }
 .navegacion .navegacion__enlaces .enlace--mobile {
   display: none;
@@ -276,7 +278,8 @@ p {
     width: 100%;
   }
   .seccion .seccion__parrafo {
-    grid-row: 3/4;
+    grid-row: 1/2;
+    margin-bottom: 3rem;
   }
 }
 .footer {

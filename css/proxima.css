@@ -85,6 +85,7 @@ p {
 }
 .navegacion .navegacion__enlaces .enlace:hover {
   color: #EE2A7B;
+  text-decoration: none;
 }
 .navegacion .navegacion__enlaces .enlace--mobile {
   display: none;
